@@ -1,15 +1,13 @@
+import React from "react";
 
-import './App.css';
 
-function App() {
-  let name = "kkh";
-  return (
-    <div className="App">
-      <header className="App-header">
-        <div>{name}</div>
-      </header>
-    </div>
-  );
+const App = () => {
+
+    return (
+        <div className="App">
+
+        </div>
+    )
 }
 
 export default App;
