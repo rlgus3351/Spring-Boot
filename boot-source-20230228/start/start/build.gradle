@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+    // 빌드 결과가 war로 나오기 위한.
+    id 'war'
+}
+
+group = 'hello'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '17'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    //서블릿 라이브러리 코드
+    implementation 'jakarta.servlet:jakarta.servlet-api:6.0.0'
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+}
